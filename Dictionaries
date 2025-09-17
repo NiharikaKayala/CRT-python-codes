@@ -1,0 +1,39 @@
+d1 = {}
+d2 = dict()
+print(d1,type(d1))
+print(d2,type(d2))
+d3 = {1:"uma",2:"Anandam",3:"Bablu",4:"Harish"}
+print(d3)
+# No Duplicate Keys
+d4 = {1:"uma",2:"Anandam",3:"Bablu",4:"Harish",4:"Harsha"}
+print(d4)
+# Membership Operators
+print(1 in d4)
+print("uma" in d4) # does not works for values
+d = {1:"uma",2:"Anandam",3:"Bablu",4:"Harish"}
+print(d)
+# Updating
+d[2] = "Ananda Saraswathi"
+print(d)
+# Creating new Keys
+d[5] = "Likitha"
+print(d)
+d.setdefault(6,"Hello")
+print(d)
+# Get Key
+print(d[1])
+print(d.get(2))
+
+# Key and Value Set
+print(d.keys())
+print(d.values())
+
+# Traversing
+for i in d:
+    print(f"{i} = {d[i]}")
+# Using Key Set
+for i in d.keys():
+    print(f"{i} = {d[i]}")
+#Using Value Set
+for i in d.values():
+    print(i)
