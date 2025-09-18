@@ -1,0 +1,56 @@
+class A:
+    a = "I am Class A"
+    def A_Method(self):
+        print("I am Method of A Class")
+        
+# Single Inheritance
+class B(A):
+    b = "I am Class B"
+    def B_Method(self):
+        print("I am Method of B Class")
+# Multi Level Inheritance
+class C(B):
+    c = "I am C Class"
+    def C_Method(self):
+        print("I am C class Mehtod")
+class D:
+    d = "I am D Class"
+    def D_Method(self):
+        print("I am D Method")
+# Multiple Inheritance
+class E(A,D):
+    e = "I am E Class"
+    def E_Method(self):
+        print("I am E Method")
+
+# Main Code
+print("Creating Object of B")
+b = B()
+print("Acessing B Class with B object")
+print(b.b)
+b.B_Method()
+print("Acessing A Class with B object")
+print(b.a)
+b.A_Method()
+print("Creating Object of C")
+c = C()
+print("Acessing C Class with C object")
+print(c.c)
+c.C_Method()
+print("Acessing B Class with C object")
+print(c.b)
+c.B_Method()
+print("Acessing A Class with C object")
+print(c.a)
+c.A_Method()
+print("Creating E Class Object")
+e = E()
+print("Acessing E Class with E Object")
+print(e.e)
+e.E_Method()
+print("Accessing A class with E object")
+print(e.a)
+e.A_Method()
+print("Accessing D class with E object")
+print(e.d)
+e.D_Method()

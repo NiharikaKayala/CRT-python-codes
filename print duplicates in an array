@@ -1,0 +1,7 @@
+array=[1,2,3,4,3,5,7,2,4]
+track=set()
+for i in array:
+    if i not in track:
+        track.add(i)
+    else:
+        print(f"{i}is repeated")

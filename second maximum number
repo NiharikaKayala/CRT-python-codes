@@ -1,0 +1,10 @@
+li=[1,2,3,4,5]
+g1=0
+g2=0
+for i in li:
+    if(i>g1):
+       g2=g1
+       g1=i
+    elif(i>g2 and i<g1):
+        g2=i
+print("secomd highest number is",g2)

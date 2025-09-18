@@ -1,0 +1,41 @@
+# Function with No Parameters and No Return Values
+def say_hello():
+    print("Hello Good Morning")
+say_hello()
+
+# Functions with Parameters and without Return Values
+def say_my_name(name):
+    print(f"Hello {name}, Good Morning")
+say_my_name("Maximus Decimus Meridus")
+
+def adder(a,b):
+    print(f"addition of {a} + {b} = {a+b}")
+a = 19
+b = 25
+adder(a,b)
+num1 = 27
+num2 = 44
+adder(num1,num2)
+
+# Functions without Parameters and with return Values
+def helloer():
+    return "Hello Namaste"
+helloer()
+print(helloer())
+a = 150
+print(a)
+
+# Function with Parameters and With Return Type
+# Calling previous Adder Function
+print(adder(23,22))
+# val = adder(40,50) - None
+# val = val*10 + 100 - Cannot be stored and modified
+# print(val)
+
+def adder_with_return(a,b):
+    return a+b
+print(adder_with_return(40,50))
+val = adder_with_return(40,50)
+print(val)
+val = val*10+100
+print(val)

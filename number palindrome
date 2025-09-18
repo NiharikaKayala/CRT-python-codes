@@ -1,0 +1,11 @@
+def is_palindrome(number):
+   cp=number
+   rev=0
+   while(cp>0):
+       rem=cp%10
+       rev=rev*10+rem
+       cp=cp//10
+   if (rev==number):
+        return True
+   return False
+print(is_palindrome(121))

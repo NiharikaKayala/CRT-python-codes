@@ -1,0 +1,9 @@
+# File Creation
+file = open("Hellomama.txt", "w")
+file.write("Hello Guru Manadhe idantha")
+file.close()  
+# Reading file
+reader = open("Hellomama.txt", "r")
+content = reader.readline()
+reader.close()
+print(content)

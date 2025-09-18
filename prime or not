@@ -1,0 +1,8 @@
+def prime_or_not(value):
+   if (value<=1):
+       return 'not_prime'
+   for i in range(2,(value//2)+1):
+     if(value%i==0):
+        return 'not_prime'
+   return 'prime'
+print(prime_or_not(5))

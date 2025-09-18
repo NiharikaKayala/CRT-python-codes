@@ -1,0 +1,12 @@
+class pandu:
+    name = "Pandu"
+    def works(self):
+        print("Air Force Officer aka Farmer")
+class Krisha_Manohar(pandu):
+    orig_name = "Krishna Manohar"
+    def works(self):
+        print("Krisna Manohar IPS")
+krishna = Krisha_Manohar()
+print(krishna.name)
+print(krishna.orig_name)
+krishna.works()

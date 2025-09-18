@@ -1,0 +1,10 @@
+array=[1,1,2,3,4,3,5,7,2,4,1,2,3,2,4]
+track={}
+for i in array:
+    if i not in track:
+        track[i]=1
+    else:
+        track[i]=track[i]+1
+        for i in track:
+            if track[i]>1:
+              print(f"{i}is repeated for {track[i]} times")
